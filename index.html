@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8" />
+        <meta name ="viewport" content = "width=device-width, initial-scale=1.0" />
+        <title> yun's site </title>
+        <link rel = "stylesheet" href = "style.css" />
+    </head>
+
+    <body>
+        <header>
+            <div class="scrolling-header">
+                <div class ="header-text"> 
+                    <p id = "date"></p>
+                    <p> you have reached yun </p>
+                    <p id ="time"></p>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class = "intro">
+                <img src = "files/IMG_1850.jpg" alt = "picture of me!" />
+                <div class = "intro-text">
+                    <p> selina yunfei </p>
+                    <p> shuai </p>
+                    <p style = "font-size: 25px; color: black; -webkit-text-stroke: 0px; line-height: 30px; padding-top: 20px; white-space: pre-wrap;"> <b>high school student, <br> graphic deisgner,<br> computer programmer sometimes.</b></p>
+                    <p style = "font-size: 25px; color: black; -webkit-text-stroke: 0px; line-height: 30px; padding-top: 20px; white-space: pre-wrap;"> ★ based in ottawa, canada. </p>
+                </div>
+            </div>
+            
+
+
+
+        </main>
+        <script>
+            const now = new Date();
+            const date = now.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }).toLowerCase();
+            const time = now.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true }).toLowerCase();
+
+            document.getElementById('date').textContent = date;
+            document.getElementById('time').textContent = time;
+        </script>
+    </body>
+
+
+
+</html>
